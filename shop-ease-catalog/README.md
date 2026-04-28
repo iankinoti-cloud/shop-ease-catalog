@@ -1,18 +1,37 @@
-# React + Vite
+# ShopEase Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic product catalog built with React and Vite. Users can browse products and filter them by category all without any page reloads.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Displays product cards with image, title, price, and category
+- Filter products by category (Electronics, Clothing, Sports, Kitchen)
+- "All" button resets the filter to show every product
+- State-driven UI; React re-renders only what changes
 
-## React Compiler
+## Project Structure
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```
+src/
+├── components/
+│   ├── FilterBar.jsx   # Category filter buttons
+│   └── ProductCard.jsx # Individual product card
+├── data/
+│   └── products.js     # Static product data
+├── App.jsx             # Root component — holds filter state
+└── App.css             # Catalog styles
+```
 
-Note: This will impact Vite dev & build performances.
+## Getting Started
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Built With
+
+- [React 19](https://react.dev/)
+- [Vite](https://vite.dev/)

@@ -1,1 +1,0 @@
-# shop-ease-catalog
