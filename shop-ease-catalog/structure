@@ -1,0 +1,8 @@
+src/
+├── data/
+│   └── products.js          ← 8 products across 4 categories
+├── components/
+│   ├── ProductCard.jsx       ← renders image, title, price, category
+│   └── FilterBar.jsx         ← renders filter buttons with active state
+├── App.jsx                   ← state lives here (activeCategory)
+└── App.css                   ← catalog styles
